@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "33beabd3-e055-44f1-8fc0-c2855bfd3394",
+		"name": "AdvertisingGolang",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11431014"
+	},
+	"item": [
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ORIGIN}}/hello",
+					"host": [
+						"{{ORIGIN}}"
+					],
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello Func",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ORIGIN}}/hello_func",
+					"host": [
+						"{{ORIGIN}}"
+					],
+					"path": [
+						"hello_func"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
