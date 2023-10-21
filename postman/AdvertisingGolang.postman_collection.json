@@ -7,38 +7,50 @@
 	},
 	"item": [
 		{
-			"name": "Hello",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{ORIGIN}}/hello",
-					"host": [
-						"{{ORIGIN}}"
-					],
-					"path": [
-						"hello"
-					]
+			"name": "advertisements",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ORIGIN}}/advertisements",
+							"host": [
+								"{{ORIGIN}}"
+							],
+							"path": [
+								"advertisements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": ":id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ORIGIN}}/advertisements/:id",
+							"host": [
+								"{{ORIGIN}}"
+							],
+							"path": [
+								"advertisements",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "Hello Func",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{ORIGIN}}/hello_func",
-					"host": [
-						"{{ORIGIN}}"
-					],
-					"path": [
-						"hello_func"
-					]
-				}
-			},
-			"response": []
+			]
 		}
 	]
 }
